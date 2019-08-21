@@ -1,4 +1,4 @@
-# movie-db
+# Aplicativo The Movie Db
 Projeto utilizando a API The Movie DB para listagem e detalhes de filmes, em Kotlin para Android.
 
 Tecnologias e padrões utilizados:
