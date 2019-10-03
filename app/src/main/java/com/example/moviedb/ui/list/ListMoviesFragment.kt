@@ -92,22 +92,8 @@ class ListMoviesFragment : Fragment(), ListMoviesContract.View, ListMoviesAdapte
     }
 
     private fun initView() {
+        
         presenter.loadData(10)
-
-        //https://www.journaldev.com/24041/android-recyclerview-load-more-endless-scrolling
-
-        /*recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                val layoutManager = LinearLayoutManager::class.java.cast(recyclerView.layoutManager)
-                val totalItemCount = layoutManager!!.itemCount
-                val lastVisible = layoutManager.findLastVisibleItemPosition()
-
-                val endHasBeenReached = lastVisible + 5 >= totalItemCount
-                if (totalItemCount > 0 && endHasBeenReached) {
-                    presenter.loadData(totalItemCount + 10)
-                }
-            }
-        })*/
     }
 
     override fun onDestroyView() {
